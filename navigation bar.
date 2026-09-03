@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Website Information -->
+    <meta charset="UTF-8">
+    <meta najustify-content: space-between → Creates space between logo and menu.me="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navbar</title>
+
+    <style>
+
+        /* Reset Default Browser Settings */
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        /* Navigation Bar Container */
+        nav{
+            background:#0b3d62;              /* Navbar background color */
+            display:flex;                   /* Flexbox layout */
+            justify-content:space-between;  /* Logo left, menu right */
+            align-items:center;             /* Center items vertically */
+            padding:15px 40px;              /* Top-Bottom, Left-Right spacing */
+        }
+
+        /* Website Logo */
+        .logo{
+            color:white;
+            font-size:24px;
+            font-weight:bold;
+        }
+
+        /* Menu List */
+        nav ul{
+            list-style:none; /* Remove bullets */
+            display:flex;    /* Show menu items in one row */
+        }
+
+        /* Individual Menu Item */
+        nav ul li{
+            margin-left:20px; /* Space between menu items */
+        }
+
+        /* Menu Links */
+        nav ul li a{
+            color:white;
+            text-decoration:none; /* Remove underline */
+            font-size:16px;
+        }
+
+        /* Hover Effect */
+        nav ul li a:hover{
+            color:#ffcc00; /* Change color when mouse hovers */
+        }
+
+        /* Cart Button Design */
+        .cart{
+            background:#ffcc00;
+            color:black !important;
+            padding:8px 12px;
+            border-radius:5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION BAR ================= -->
+    <nav>
+
+        <!-- Website Logo -->
+        <div class="logo">
+            ON THE WAY
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul>
+
+            <!-- Home Link -->
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <!-- Packages Link -->
+            <li>
+                <a href="#packages">Packages</a>
+            </li>
+
+            <!-- About Link -->
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <!-- Contact Link -->
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+            <!-- Cart Button -->
+            <li>
+                <a href="#cart" class="cart">
+                    Cart 🛒
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+        <!--  nav → Main navigation bar.-->
+        <!--  logo → Website name/logo.-->
+        <!--  ul → Menu container.-->
+        <!--li → Each menu item.-->
+        <!--  a → Clickable links.-->
+        <!-- cart → Special styling for the Cart button.-->
+        <!-- display: flex → Places logo on the left and menu on the right.-->
+        <!-- justify-content: space-between → Creates space between logo and menu.-->
+        <!--align-items: center → Vertically centers everything. -->
+
+</body>
+</html>
