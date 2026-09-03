@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages</title>
+
+    <style>
+
+        /* Reset Default Browser Settings */
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        /* Page Background */
+        body{
+            background:#c9e1f5;
+            padding:50px;
+        }
+
+        /* ================= SECTION TITLE ================= */
+
+        .section-title{
+            text-align:center; /* Center align heading and paragraph */
+            margin-bottom:40px;
+        }
+
+        .section-title h2{
+            font-size:45px;
+            color:#0b3d62;
+        }
+
+        .section-title p{
+            color:#000000;
+            margin-top:10px;
+            font-size:18px;
+        }
+
+        /* ================= PACKAGE CONTAINER ================= */
+
+        .packages{
+            display:grid; /* Display cards in grid format */
+            grid-template-columns:repeat(3,1fr); /* 3 cards per row */
+            gap:25px; /* Space between cards */
+        }
+
+        /* ================= CARD DESIGN ================= */
+
+        .card{
+            background:white;
+            border-radius:12px; /* Rounded corners */
+            overflow:hidden;
+            box-shadow:0 4px 15px rgba(0,0,0,0.1); /* Shadow effect */
+        }
+
+        /* Package Image */
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover; /* Keep image proportion */
+        }
+
+        /* Card Content Area */
+        .card-content{
+            padding:20px;
+        }
+
+        /* Package Name */
+        .card-content h3{
+            color:#0b3d62;
+            font-size:22px;
+            margin-bottom:15px;
+        }
+
+        /* Package Description */
+        .card-content p{
+            color:#555;
+            line-height:1.8;
+            margin-bottom:10px;
+        }
+
+        /* Package Price */
+        .price{
+            color:#216fff;
+            font-size:32px;
+            font-weight:bold;
+            margin:15px 0;
+        }
+
+        /* Add to Cart Button */
+        .btn{
+            background:#ffcc00;
+            border:none;
+            padding:12px 20px;
+            font-weight:bold;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        .btn:hover{
+            background:#06db34;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- ================= TOUR PACKAGE SECTION ================= -->
+
+    <section>
+
+        <!-- Section Heading -->
+        <div class="section-title">
+            <h2>Popular Tour Packages</h2>
+            <p>Choose your favorite destination</p>
+        </div>
+
+        <!-- All Package Cards -->
+        <div class="packages">
+
+            <!-- ================= PACKAGE 1 ================= -->
+
+            <div class="card">
+
+                <!-- Package Image -->
+                <img src="https://tinyurl.com/49t6b5jt"
+                     alt="Cox's Bazar">
+
+                <div class="card-content">
+
+                    <!-- Package Name -->
+                    <h3>Cox's Bazar Tour</h3>
+
+                    <!-- Package Description -->
+                    <p>
+                        Enjoy the world's longest natural sea beach
+                        with your friends and family.
+                    </p>
+
+                    <!-- Tour Duration -->
+                    <p>📅 3 Days / 2 Nights</p>
+
+                    <!-- Package Price -->
+                    <div class="price">৳ 8,500</div>
+
+                    <!-- Add to Cart Button -->
+                    <button class="btn">Add to Cart</button>
+
+                </div>
+
+            </div>
+
+            <!-- ================= PACKAGE 2 ================= -->
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5"
+                     alt="Sajek Valley">
+
+                <div class="card-content">
+
+                    <h3>Sajek Valley Tour</h3>
+
+                    <p>
+                        Explore the beautiful mountains,
+                        clouds and natural beauty of Sajek.
+                    </p>
+
+                    <p>📅 2 Days / 1 Night</p>
+
+                    <div class="price">৳ 6,500</div>
+
+                    <button class="btn">Add to Cart</button>
+
+                </div>
+
+            </div>
+
+            <!-- ================= PACKAGE 3 ================= -->
+
+            <div class="card">
+
+                <img src="https://tinyurl.com/2rrda3w4"
+                     alt="Bandarban">
+
+                <div class="card-content">
+
+                    <h3>Bandarban Tour</h3>
+
+                    <p>
+                        Experience hills, waterfalls and
+                        amazing natural landscapes.
+                    </p>
+
+                    <p>📅 3 Days / 2 Nights</p>
+
+                    <div class="price">৳ 9,000</div>
+
+                    <button class="btn">Add to Cart</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
