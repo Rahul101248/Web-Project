@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <h2>Rahul</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Hello, I'm Rahul</h1>
+    <p>Web Development Student</p>
+</section>
+
+<section>
+    <h2>My Skills</h2>
+
+    <div class="skills">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>Java</div>
+    </div>
+</section>
+
+<section>
+    <h2>My Projects</h2>
+
+    <div class="projects">
+        <div>Portfolio</div>
+        <div>Library System</div>
+        <div>Online Store</div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Rahul
+</footer>
+
+</body>
+</html>
