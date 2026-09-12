@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+/* Flexbox + Positioning */
+nav {
+    background: #0b3d62;
+    color: white;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* Box Model */
+section {
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.hero {
+    padding: 80px 10px;
+    background: #dceeff;
+}
+
+/* Flexbox */
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skills div,
+.projects div {
+    background: white;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Grid */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+footer {
+    background: #0b3d62;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
